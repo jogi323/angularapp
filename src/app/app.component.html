@@ -1,0 +1,9 @@
+<div class="heading">
+  <h1>{{title}}</h1>
+</div>
+<ul>
+  <li *ngFor="let hero of heroesList" (click)="select(hero)">
+    {{hero.id}}-{{hero.name}}
+  </li>
+</ul>
+<app-hero-details [hero]="selectedHero"></app-hero-details>
