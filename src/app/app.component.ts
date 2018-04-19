@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'Tour of Heroes';
   heroesList = Heroes;
   selectedHero = null;
+  // event
   select(hero){
     this.selectedHero  = hero;
   }
